@@ -41,11 +41,12 @@ end
 def using_delete(arr, str)
   arr.each do |ele|
     if ele == str
-      arr.delete!
+      arr.delete
     end
   end
 end
 
 def using_delete_at(arr, int)
-  arr[int].delete
+  ele = arr[int]
+  ele.delete
 end
